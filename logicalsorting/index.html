@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <script src="angular-dragdrop.min.js"></script>
+</head>
+<body ng-app="App" ng-controller="OverviewCtrl">
+    <div class="centriranje">
+        </br>
+        <span class="left">It will be a</span><div class="empty" data-drop="true" data-jqyoui-options ng-model="list4" jqyoui-droppable style='height:18px;'>
+            <div data-drag="false" ng-class="{'good': list4.title === 'good', 'bad': list4.title === 'fat' || list4.title === 'fluffy' }" ng-model="list4" jqyoui-draggable ng-hide="!list4.title">{{list4.title}}</div>
+        </div><span class="left"> day, I have a hint!</span></br></br>
+
+        <div class="kutija">
+            <div class="label label-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{animate:true}" ng-hide="!list1.title">{{list1.title}}</div>
+            <div class="label label-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list2" jqyoui-draggable="{animate:true}" ng-hide="!list2.title">{{list2.title}}</div>
+            <div class="label label-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list3" jqyoui-draggable="{animate:true}" ng-hide="!list3.title">{{list3.title}}</div>
+        </div>
+        </br>
+        <i>Odaberite jednu od ponuđenih riječi i prevucite </br>na prazno mijesto iznad.</i>
+    </div>
+
+
+</body>
+</html>

@@ -3,3 +3,4 @@ This is simple app that gives one sentence that lacks one word and you must chos
 
 This app can be tested on plunkr:
 [plunkr link](https://plnkr.co/edit/xbC1HB7DuvN0tmxClzBe?p=preview) 
+[Codepe link] (https://codepen.io/iFun_Studios/pen/exrPdX)
